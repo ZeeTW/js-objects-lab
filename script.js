@@ -46,10 +46,25 @@ Exercise 4
 
 Solve Exercise 4 here:
 */
+// i tried this method but i am not sure if this was the right answer but im keeping it here just incase.
 
-if (pokemon[0].starter === true) {
-  game.party.push(pokemon[0])
-  console.log(game.party)
-} else {
-  return null
-}
+// if (pokemon[0].starter === true) {
+//   game.party.push(pokemon[0])
+//   console.log(game.party)
+// } else {
+//   return null
+// }
+game.party.push(pokemon.find((pokemon) => pokemon.starter === true))
+
+/*
+Exercise 5
+1. Choose three more Pokémon from the `pokemon` array and add them to your party.
+2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
+
+
+Solve Exercise 5 here:
+*/
+
+game.party.push(pokemon.find((pokemon) => pokemon.hp === 44))
+game.party.push(pokemon.find((pokemon) => pokemon.type === 'fire'))
+game.party.push(pokemon.find((pokemon) => pokemon.name === 'Eevee'))
