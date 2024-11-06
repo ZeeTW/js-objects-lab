@@ -18,3 +18,9 @@ const game = {
     { name: 'rare candy', quantity: 99 }
   ]
 }
+
+// Exercise 1
+
+// console.dir(pokemon, { maxArrayLength: null })
+
+console.log(pokemon[58])
