@@ -241,10 +241,10 @@ Solve Exercise 14 here:
 */
 
 game.partyCount = () => {
-  console.log(pokemon.length)
+  return game.party.length
 }
-// partyCount(pokemon)
-
+const partyPokemon = game.partyCount()
+console.log(partyPokemon)
 /*
 Exercise 15
 1. Now, complete gyms with a difficulty below 8. Reflect on how this is similar to or different from the previous gym exercises.
