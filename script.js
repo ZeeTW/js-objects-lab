@@ -159,12 +159,28 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being 
 
 Solve Exercise 11 here:
 */
-// game.catchPokemon = (pokemonObj) => {
-//   game.party.push(pokemonObj)
-// }
-// let pokeball = game.items.find((item) => item.name === 'pokeball')
-// if (pokeball) {
-//   pokeball -= 1
-// }
+game.catchPokemon = (pokemonObj) => {
+  game.party.push(pokemonObj)
+}
+let pokeball = game.items.find((item) => item.name === 'pokeball')
+if (pokeball) {
+  pokeball -= 1
+}
 
 console.log(game.items)
+
+/*
+Exercise 12
+1. Similar to Exercise 6, now complete gyms with a difficulty below 6. How will you approach this?
+ (change the value of `complete` in the qualifying objects from false to true).
+
+Solve Exercise 12 here:
+*/
+game.gyms.forEach((gym) => {
+  if (gym.difficulty < 6) {
+    gym.completed = true
+  } else {
+    return null
+  }
+})
+console.log(game.gyms)
